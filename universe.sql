@@ -86,7 +86,8 @@ ALTER SEQUENCE public.asteroid_asteroid_id_seq OWNED BY public.asteroid.asteroid
 
 CREATE TABLE public.galaxy (
     galaxy_id integer NOT NULL,
-    name character varying(50) NOT NULL
+    name character varying(50) NOT NULL,
+    morphology character varying(20)
 );
 
 
