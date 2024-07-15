@@ -86,7 +86,8 @@ CREATE TABLE public.moon (
     name character varying(50) NOT NULL,
     mass_in_kg numeric,
     diameter_in_m integer,
-    tidally_locked boolean
+    tidally_locked boolean,
+    planet_id integer NOT NULL
 );
 
 
@@ -297,6 +298,14 @@ ALTER TABLE ONLY public.planet
 
 ALTER TABLE ONLY public.star
     ADD CONSTRAINT star_pkey PRIMARY KEY (star_id);
+
+
+--
+-- Name: moon moon_planet_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: freecodecamp
+--
+
+ALTER TABLE ONLY public.moon
+    ADD CONSTRAINT moon_planet_id_fkey FOREIGN KEY (planet_id) REFERENCES public.planet(planet_id);
 
 
 --
