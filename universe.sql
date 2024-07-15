@@ -123,7 +123,8 @@ CREATE TABLE public.planet (
     name character varying(50) NOT NULL,
     diameter_in_m integer,
     description text,
-    has_atmosphere boolean
+    has_atmosphere boolean,
+    star_id integer NOT NULL
 );
 
 
@@ -296,6 +297,14 @@ ALTER TABLE ONLY public.planet
 
 ALTER TABLE ONLY public.star
     ADD CONSTRAINT star_pkey PRIMARY KEY (star_id);
+
+
+--
+-- Name: planet planet_star_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: freecodecamp
+--
+
+ALTER TABLE ONLY public.planet
+    ADD CONSTRAINT planet_star_id_fkey FOREIGN KEY (star_id) REFERENCES public.star(star_id);
 
 
 --
