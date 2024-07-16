@@ -198,7 +198,9 @@ ALTER SEQUENCE public.planet_planet_id_seq OWNED BY public.planet.planet_id;
 CREATE TABLE public.star (
     star_id integer NOT NULL,
     name character varying(50) NOT NULL,
-    galaxy_id integer NOT NULL
+    galaxy_id integer NOT NULL,
+    harvard_class character varying(10),
+    color character varying(30)
 );
 
 
