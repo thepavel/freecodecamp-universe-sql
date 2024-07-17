@@ -275,6 +275,12 @@ ALTER TABLE ONLY public.star ALTER COLUMN star_id SET DEFAULT nextval('public.st
 -- Data for Name: galaxy; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.galaxy VALUES (1, 'Milky Way', 'barred spiral', -5.1, 'Sb');
+INSERT INTO public.galaxy VALUES (2, 'Pinwheel Galaxy', 'spiral', 7.9, 'SAB(rs)cd');
+INSERT INTO public.galaxy VALUES (3, 'Spindle Galaxy', 'lenticular', 9.9, 'S0');
+INSERT INTO public.galaxy VALUES (5, 'Andromeda Galaxy', 'barred spiral', 3.44, 'SA(s)b');
+INSERT INTO public.galaxy VALUES (6, 'Hoags Object', 'ring', 16.2, '(RP)SA0/a');
+INSERT INTO public.galaxy VALUES (7, 'Triangulum Galaxy', 'spiral', 5.72, 'SA(s)cd');
 
 
 --
@@ -306,7 +312,7 @@ SELECT pg_catalog.setval('public.asteroid_asteroid_id_seq', 1, false);
 -- Name: galaxy_galaxy_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.galaxy_galaxy_id_seq', 1, false);
+SELECT pg_catalog.setval('public.galaxy_galaxy_id_seq', 7, true);
 
 
 --
