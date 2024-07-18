@@ -278,9 +278,9 @@ ALTER TABLE ONLY public.star ALTER COLUMN star_id SET DEFAULT nextval('public.st
 INSERT INTO public.galaxy VALUES (1, 'Milky Way', 'barred spiral', -5.1, 'Sb');
 INSERT INTO public.galaxy VALUES (2, 'Pinwheel Galaxy', 'spiral', 7.9, 'SAB(rs)cd');
 INSERT INTO public.galaxy VALUES (3, 'Spindle Galaxy', 'lenticular', 9.9, 'S0');
-INSERT INTO public.galaxy VALUES (5, 'Andromeda Galaxy', 'barred spiral', 3.44, 'SA(s)b');
-INSERT INTO public.galaxy VALUES (6, 'Hoags Object', 'ring', 16.2, '(RP)SA0/a');
-INSERT INTO public.galaxy VALUES (7, 'Triangulum Galaxy', 'spiral', 5.72, 'SA(s)cd');
+INSERT INTO public.galaxy VALUES (4, 'Andromeda Galaxy', 'barred spiral', 3.44, 'SA(s)b');
+INSERT INTO public.galaxy VALUES (5, 'Hoags Object', 'ring', 16.2, '(RP)SA0/a');
+INSERT INTO public.galaxy VALUES (6, 'Triangulum Galaxy', 'spiral', 5.72, 'SA(s)cd');
 
 
 --
