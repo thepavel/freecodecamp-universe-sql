@@ -162,9 +162,9 @@ ALTER SEQUENCE public.moon_moon_id_seq OWNED BY public.moon.moon_id;
 CREATE TABLE public.planet (
     planet_id integer NOT NULL,
     name character varying(50) NOT NULL,
-    diameter_in_m integer,
+    mean_radius_km numeric,
     description text,
-    has_atmosphere boolean,
+    has_satellites boolean,
     star_id integer NOT NULL
 );
 
