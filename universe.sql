@@ -305,6 +305,7 @@ INSERT INTO public.star VALUES (3, 'Betelgeuse', 1, 'M', 'red');
 INSERT INTO public.star VALUES (4, 'Sirius', 1, 'A', 'white');
 INSERT INTO public.star VALUES (5, 'Rigel', 1, 'B', 'blue');
 INSERT INTO public.star VALUES (6, 'Vega', 1, 'A', 'white');
+INSERT INTO public.star VALUES (7, 'TRAPPIST-1', 1, 'M8V', 'cool red');
 
 
 --
@@ -339,7 +340,7 @@ SELECT pg_catalog.setval('public.planet_planet_id_seq', 1, false);
 -- Name: star_star_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.star_star_id_seq', 6, true);
+SELECT pg_catalog.setval('public.star_star_id_seq', 7, true);
 
 
 --
