@@ -301,13 +301,14 @@ INSERT INTO public.planet VALUES (5, 'Jupiter', 69911, 'a GIANT', true, 1);
 INSERT INTO public.planet VALUES (6, 'Saturn', 58232, 'a ringed Giant', true, 1);
 INSERT INTO public.planet VALUES (7, 'Uranus', 25362, 'a cold place', true, 1);
 INSERT INTO public.planet VALUES (8, 'Neptune', 24622, 'farthest planet now', true, 1);
-INSERT INTO public.planet VALUES (9, 'TRAPPIST-1b', 7118, 'mainly rocky exoplanet', false, 7);
-INSERT INTO public.planet VALUES (10, 'TRAPPIST-1c', 6996.82, '2nd mainly rocky exoplanet', false, 7);
-INSERT INTO public.planet VALUES (11, 'TRAPPIST-1d', 5025.97, '3rd mainly rocky exoplanet', false, 7);
-INSERT INTO public.planet VALUES (12, 'TRAPPIST-1e', 5867.89, '4th mainly rocky exoplanet', false, 7);
-INSERT INTO public.planet VALUES (13, 'TRAPPIST-1f', 6665.15, '5th mainly rocky exoplanet', false, 7);
-INSERT INTO public.planet VALUES (14, 'TRAPPIST-1g', 7200.9, '6th mainly rocky exoplanet', false, 7);
-INSERT INTO public.planet VALUES (15, 'TRAPPIST-1h', 4815.49, '7th mainly rocky exoplanet', false, 7);
+INSERT INTO public.planet VALUES (9, 'Pluto', 1188.30, 'dwarf', true, 1);
+INSERT INTO public.planet VALUES (10, 'TRAPPIST-1b', 7118, 'mainly rocky exoplanet', false, 7);
+INSERT INTO public.planet VALUES (11, 'TRAPPIST-1c', 6996.82, '2nd mainly rocky exoplanet', false, 7);
+INSERT INTO public.planet VALUES (12, 'TRAPPIST-1d', 5025.97, '3rd mainly rocky exoplanet', false, 7);
+INSERT INTO public.planet VALUES (13, 'TRAPPIST-1e', 5867.89, '4th mainly rocky exoplanet', false, 7);
+INSERT INTO public.planet VALUES (14, 'TRAPPIST-1f', 6665.15, '5th mainly rocky exoplanet', false, 7);
+INSERT INTO public.planet VALUES (15, 'TRAPPIST-1g', 7200.9, '6th mainly rocky exoplanet', false, 7);
+INSERT INTO public.planet VALUES (16, 'TRAPPIST-1h', 4815.49, '7th mainly rocky exoplanet', false, 7);
 
 
 --
