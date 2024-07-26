@@ -51,8 +51,8 @@ CREATE TABLE public.asteroid (
     asteroid_id integer NOT NULL,
     name character varying(100) NOT NULL,
     star_id integer NOT NULL,
-    mass_in_kg integer,
-    diameter_in_m numeric
+    mean_star_distance_au numeric,
+    mean_diameter_km numeric
 );
 
 
