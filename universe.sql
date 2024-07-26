@@ -269,6 +269,9 @@ ALTER TABLE ONLY public.star ALTER COLUMN star_id SET DEFAULT nextval('public.st
 -- Data for Name: asteroid; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.asteroid VALUES (1, 'Ceres', 1, 10.6, 939.4);
+INSERT INTO public.asteroid VALUES (2, 'Vesta', 1, 2.362, 525.4);
+INSERT INTO public.asteroid VALUES (3, 'Pallas', 1, 2.773, 511);
 
 
 --
@@ -350,7 +353,7 @@ INSERT INTO public.star VALUES (7, 'TRAPPIST-1', 1, 'M8V', 'cool red');
 -- Name: asteroid_asteroid_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.asteroid_asteroid_id_seq', 1, false);
+SELECT pg_catalog.setval('public.asteroid_asteroid_id_seq', 3, true);
 
 
 --
