@@ -52,7 +52,9 @@ CREATE TABLE public.asteroid (
     name character varying(100) NOT NULL,
     star_id integer NOT NULL,
     mean_star_distance_au numeric,
-    mean_diameter_km numeric
+    mean_diameter_km numeric, 
+    rotation_period_s integer, 
+    orbital_period_hrs integer
 );
 
 
@@ -269,9 +271,9 @@ ALTER TABLE ONLY public.star ALTER COLUMN star_id SET DEFAULT nextval('public.st
 -- Data for Name: asteroid; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.asteroid VALUES (1, 'Ceres', 1, 10.6, 939.4);
-INSERT INTO public.asteroid VALUES (2, 'Vesta', 1, 2.362, 525.4);
-INSERT INTO public.asteroid VALUES (3, 'Pallas', 1, 2.773, 511);
+INSERT INTO public.asteroid VALUES (1, 'Ceres', 1, 10.6, 939.4, 32640, 40296);
+INSERT INTO public.asteroid VALUES (2, 'Vesta', 1, 2.362, 525.4, 19224, 31799);
+INSERT INTO public.asteroid VALUES (3, 'Pallas', 1, 2.773, 511, 28116, 40471);
 
 
 --
