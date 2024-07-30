@@ -210,7 +210,9 @@ CREATE TABLE public.star (
     name character varying(50) NOT NULL,
     galaxy_id integer NOT NULL,
     harvard_class character varying(10),
-    color character varying(30)
+    color character varying(30),
+    some_field integer,
+    another_field integer
 );
 
 
@@ -348,13 +350,13 @@ INSERT INTO public.planet VALUES (16, 'TRAPPIST-1h', 4815.49, '7th mainly rocky 
 -- Data for Name: star; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.star VALUES (1, 'Sun', 1, 'G', 'yellow');
-INSERT INTO public.star VALUES (2, 'Antares', 1, 'M', 'red');
-INSERT INTO public.star VALUES (3, 'Betelgeuse', 1, 'M', 'red');
-INSERT INTO public.star VALUES (4, 'Sirius', 1, 'A', 'white');
-INSERT INTO public.star VALUES (5, 'Rigel', 1, 'B', 'blue');
-INSERT INTO public.star VALUES (6, 'Vega', 1, 'A', 'white');
-INSERT INTO public.star VALUES (7, 'TRAPPIST-1', 1, 'M8V', 'cool red');
+INSERT INTO public.star VALUES (1, 'Sun', 1, 'G', 'yellow', NULL, NULL);
+INSERT INTO public.star VALUES (2, 'Antares', 1, 'M', 'red', NULL, NULL);
+INSERT INTO public.star VALUES (3, 'Betelgeuse', 1, 'M', 'red', NULL, NULL);
+INSERT INTO public.star VALUES (4, 'Sirius', 1, 'A', 'white', NULL, NULL);
+INSERT INTO public.star VALUES (5, 'Rigel', 1, 'B', 'blue', NULL, NULL);
+INSERT INTO public.star VALUES (6, 'Vega', 1, 'A', 'white', NULL, NULL);
+INSERT INTO public.star VALUES (7, 'TRAPPIST-1', 1, 'M8V', 'cool red', NULL, NULL);
 
 
 --
