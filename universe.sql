@@ -91,7 +91,9 @@ CREATE TABLE public.galaxy (
     name character varying(50) NOT NULL,
     morphology character varying(20),
     apparent_magnitude numeric,
-    hubble_rating character varying(10)
+    hubble_rating character varying(10),
+    some_field integer,
+    another_field integer
 );
 
 
@@ -282,12 +284,12 @@ INSERT INTO public.asteroid VALUES (3, 'Pallas', 1, 2.773, 511, 28116, 40471);
 -- Data for Name: galaxy; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.galaxy VALUES (1, 'Milky Way', 'barred spiral', -5.1, 'Sb');
-INSERT INTO public.galaxy VALUES (2, 'Pinwheel Galaxy', 'spiral', 7.9, 'SAB(rs)cd');
-INSERT INTO public.galaxy VALUES (3, 'Spindle Galaxy', 'lenticular', 9.9, 'S0');
-INSERT INTO public.galaxy VALUES (4, 'Andromeda Galaxy', 'barred spiral', 3.44, 'SA(s)b');
-INSERT INTO public.galaxy VALUES (5, 'Hoags Object', 'ring', 16.2, '(RP)SA0/a');
-INSERT INTO public.galaxy VALUES (6, 'Triangulum Galaxy', 'spiral', 5.72, 'SA(s)cd');
+INSERT INTO public.galaxy VALUES (1, 'Milky Way', 'barred spiral', -5.1, 'Sb', NULL, NULL);
+INSERT INTO public.galaxy VALUES (2, 'Pinwheel Galaxy', 'spiral', 7.9, 'SAB(rs)cd', NULL, NULL);
+INSERT INTO public.galaxy VALUES (3, 'Spindle Galaxy', 'lenticular', 9.9, 'S0', NULL, NULL);
+INSERT INTO public.galaxy VALUES (4, 'Andromeda Galaxy', 'barred spiral', 3.44, 'SA(s)b', NULL, NULL);
+INSERT INTO public.galaxy VALUES (5, 'Hoags Object', 'ring', 16.2, '(RP)SA0/a', NULL, NULL);
+INSERT INTO public.galaxy VALUES (6, 'Triangulum Galaxy', 'spiral', 5.72, 'SA(s)cd', NULL, NULL);
 
 
 --
