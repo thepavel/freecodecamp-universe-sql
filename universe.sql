@@ -52,8 +52,8 @@ CREATE TABLE public.asteroid (
     name character varying(100) NOT NULL,
     star_id integer NOT NULL,
     mean_star_distance_au numeric,
-    mean_diameter_km numeric, 
-    rotation_period_s integer, 
+    mean_diameter_km numeric,
+    rotation_period_s integer,
     orbital_period_hrs integer
 );
 
@@ -129,7 +129,9 @@ CREATE TABLE public.moon (
     orbital_speed_kms numeric,
     mean_radius_km numeric,
     tidally_locked boolean,
-    planet_id integer NOT NULL
+    planet_id integer NOT NULL,
+    some_field integer,
+    another_field integer
 );
 
 
@@ -292,28 +294,28 @@ INSERT INTO public.galaxy VALUES (6, 'Triangulum Galaxy', 'spiral', 5.72, 'SA(s)
 -- Data for Name: moon; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.moon VALUES (1, 'Ganymede', 10.88, 2634.1, true, 5);
-INSERT INTO public.moon VALUES (2, 'Callisto', 8.204, 2410.3, true, 5);
-INSERT INTO public.moon VALUES (3, 'Titan', 5.57, 2574.73, true, 6);
-INSERT INTO public.moon VALUES (4, 'Moon', 1.022, 1737.4, true, 3);
-INSERT INTO public.moon VALUES (5, 'Io', 17.334, 1821.6, true, 5);
-INSERT INTO public.moon VALUES (6, 'Europa', 13743.36, 1560.8, true, 5);
-INSERT INTO public.moon VALUES (7, 'Triton', 4.39, 1353.4, true, 8);
-INSERT INTO public.moon VALUES (8, 'Rhea', 8.48, 763.5, true, 6);
-INSERT INTO public.moon VALUES (9, 'Iapetus', 3.26, 734.4, true, 6);
-INSERT INTO public.moon VALUES (10, 'Dione', 10.03, 561.4, true, 6);
-INSERT INTO public.moon VALUES (11, 'Tethys', 11.35, 531.1, true, 6);
-INSERT INTO public.moon VALUES (12, 'Titania', 3.64, 788.4, true, 7);
-INSERT INTO public.moon VALUES (13, 'Oberon', 3.15, 761.4, true, 7);
-INSERT INTO public.moon VALUES (14, 'Umbriel', 4.67, 584.7, true, 7);
-INSERT INTO public.moon VALUES (15, 'Ariel', 5.51, 578.9, true, 7);
-INSERT INTO public.moon VALUES (16, 'Charon', 0.21, 606, true, 9);
-INSERT INTO public.moon VALUES (17, 'Enceladus', 12.64, 252.1, true, 6);
-INSERT INTO public.moon VALUES (18, 'Mimas', 14.28, 198.2, true, 6);
-INSERT INTO public.moon VALUES (19, 'Hyperion', 5.07, 135, false, 6);
-INSERT INTO public.moon VALUES (20, 'Miranda', 6.66, 235.8, true, 7);
-INSERT INTO public.moon VALUES (21, 'Proteus', 7.623, 209, true, 8);
-INSERT INTO public.moon VALUES (22, 'Nereid', 1.12, 170, true, 8);
+INSERT INTO public.moon VALUES (1, 'Ganymede', 10.88, 2634.1, true, 5, NULL, NULL);
+INSERT INTO public.moon VALUES (2, 'Callisto', 8.204, 2410.3, true, 5, NULL, NULL);
+INSERT INTO public.moon VALUES (3, 'Titan', 5.57, 2574.73, true, 6, NULL, NULL);
+INSERT INTO public.moon VALUES (4, 'Moon', 1.022, 1737.4, true, 3, NULL, NULL);
+INSERT INTO public.moon VALUES (5, 'Io', 17.334, 1821.6, true, 5, NULL, NULL);
+INSERT INTO public.moon VALUES (6, 'Europa', 13743.36, 1560.8, true, 5, NULL, NULL);
+INSERT INTO public.moon VALUES (7, 'Triton', 4.39, 1353.4, true, 8, NULL, NULL);
+INSERT INTO public.moon VALUES (8, 'Rhea', 8.48, 763.5, true, 6, NULL, NULL);
+INSERT INTO public.moon VALUES (9, 'Iapetus', 3.26, 734.4, true, 6, NULL, NULL);
+INSERT INTO public.moon VALUES (10, 'Dione', 10.03, 561.4, true, 6, NULL, NULL);
+INSERT INTO public.moon VALUES (11, 'Tethys', 11.35, 531.1, true, 6, NULL, NULL);
+INSERT INTO public.moon VALUES (12, 'Titania', 3.64, 788.4, true, 7, NULL, NULL);
+INSERT INTO public.moon VALUES (13, 'Oberon', 3.15, 761.4, true, 7, NULL, NULL);
+INSERT INTO public.moon VALUES (14, 'Umbriel', 4.67, 584.7, true, 7, NULL, NULL);
+INSERT INTO public.moon VALUES (15, 'Ariel', 5.51, 578.9, true, 7, NULL, NULL);
+INSERT INTO public.moon VALUES (16, 'Charon', 0.21, 606, true, 9, NULL, NULL);
+INSERT INTO public.moon VALUES (17, 'Enceladus', 12.64, 252.1, true, 6, NULL, NULL);
+INSERT INTO public.moon VALUES (18, 'Mimas', 14.28, 198.2, true, 6, NULL, NULL);
+INSERT INTO public.moon VALUES (19, 'Hyperion', 5.07, 135, false, 6, NULL, NULL);
+INSERT INTO public.moon VALUES (20, 'Miranda', 6.66, 235.8, true, 7, NULL, NULL);
+INSERT INTO public.moon VALUES (21, 'Proteus', 7.623, 209, true, 8, NULL, NULL);
+INSERT INTO public.moon VALUES (22, 'Nereid', 1.12, 170, true, 8, NULL, NULL);
 
 
 --
