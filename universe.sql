@@ -171,7 +171,9 @@ CREATE TABLE public.planet (
     mean_radius_km numeric,
     description text,
     has_satellites boolean,
-    star_id integer NOT NULL
+    star_id integer NOT NULL,
+    some_field integer,
+    another_field integer
 );
 
 
@@ -324,22 +326,22 @@ INSERT INTO public.moon VALUES (22, 'Nereid', 1.12, 170, true, 8, NULL, NULL);
 -- Data for Name: planet; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.planet VALUES (1, 'Mercury', 2439.7, 'First planet from the Sun', false, 1);
-INSERT INTO public.planet VALUES (2, 'Venus', 6051.8, 'Second planet from the sun. \n Dense atmosphere with sulfuric acid', false, 1);
-INSERT INTO public.planet VALUES (3, 'Earth', 6371, 'we are here', true, 1);
-INSERT INTO public.planet VALUES (4, 'Mars', 3389.5, 'The red planet', true, 1);
-INSERT INTO public.planet VALUES (5, 'Jupiter', 69911, 'a GIANT', true, 1);
-INSERT INTO public.planet VALUES (6, 'Saturn', 58232, 'a ringed Giant', true, 1);
-INSERT INTO public.planet VALUES (7, 'Uranus', 25362, 'a cold place', true, 1);
-INSERT INTO public.planet VALUES (8, 'Neptune', 24622, 'farthest planet now', true, 1);
-INSERT INTO public.planet VALUES (9, 'Pluto', 1188.30, 'dwarf', true, 1);
-INSERT INTO public.planet VALUES (10, 'TRAPPIST-1b', 7118, 'mainly rocky exoplanet', false, 7);
-INSERT INTO public.planet VALUES (11, 'TRAPPIST-1c', 6996.82, '2nd mainly rocky exoplanet', false, 7);
-INSERT INTO public.planet VALUES (12, 'TRAPPIST-1d', 5025.97, '3rd mainly rocky exoplanet', false, 7);
-INSERT INTO public.planet VALUES (13, 'TRAPPIST-1e', 5867.89, '4th mainly rocky exoplanet', false, 7);
-INSERT INTO public.planet VALUES (14, 'TRAPPIST-1f', 6665.15, '5th mainly rocky exoplanet', false, 7);
-INSERT INTO public.planet VALUES (15, 'TRAPPIST-1g', 7200.9, '6th mainly rocky exoplanet', false, 7);
-INSERT INTO public.planet VALUES (16, 'TRAPPIST-1h', 4815.49, '7th mainly rocky exoplanet', false, 7);
+INSERT INTO public.planet VALUES (1, 'Mercury', 2439.7, 'First planet from the Sun', false, 1, NULL, NULL);
+INSERT INTO public.planet VALUES (2, 'Venus', 6051.8, 'Second planet from the sun. \n Dense atmosphere with sulfuric acid', false, 1, NULL, NULL);
+INSERT INTO public.planet VALUES (3, 'Earth', 6371, 'we are here', true, 1, NULL, NULL);
+INSERT INTO public.planet VALUES (4, 'Mars', 3389.5, 'The red planet', true, 1, NULL, NULL);
+INSERT INTO public.planet VALUES (5, 'Jupiter', 69911, 'a GIANT', true, 1, NULL, NULL);
+INSERT INTO public.planet VALUES (6, 'Saturn', 58232, 'a ringed Giant', true, 1, NULL, NULL);
+INSERT INTO public.planet VALUES (7, 'Uranus', 25362, 'a cold place', true, 1, NULL, NULL);
+INSERT INTO public.planet VALUES (8, 'Neptune', 24622, 'farthest planet now', true, 1, NULL, NULL);
+INSERT INTO public.planet VALUES (9, 'Pluto', 1188.30, 'dwarf', true, 1, NULL, NULL);
+INSERT INTO public.planet VALUES (10, 'TRAPPIST-1b', 7118, 'mainly rocky exoplanet', false, 7, NULL, NULL);
+INSERT INTO public.planet VALUES (11, 'TRAPPIST-1c', 6996.82, '2nd mainly rocky exoplanet', false, 7, NULL, NULL);
+INSERT INTO public.planet VALUES (12, 'TRAPPIST-1d', 5025.97, '3rd mainly rocky exoplanet', false, 7, NULL, NULL);
+INSERT INTO public.planet VALUES (13, 'TRAPPIST-1e', 5867.89, '4th mainly rocky exoplanet', false, 7, NULL, NULL);
+INSERT INTO public.planet VALUES (14, 'TRAPPIST-1f', 6665.15, '5th mainly rocky exoplanet', false, 7, NULL, NULL);
+INSERT INTO public.planet VALUES (15, 'TRAPPIST-1g', 7200.9, '6th mainly rocky exoplanet', false, 7, NULL, NULL);
+INSERT INTO public.planet VALUES (16, 'TRAPPIST-1h', 4815.49, '7th mainly rocky exoplanet', false, 7, NULL, NULL);
 
 
 --
